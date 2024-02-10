@@ -1,0 +1,70 @@
+.aboutbrand {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+
+    &-item {
+        gap: 30px;
+        max-width: 1100px;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        // gap: 94px;
+        justify-content: space-between;
+        flex: 1;
+        &-img {
+            width: 100%;
+            & img{
+                width: 100%;
+            }
+        }
+
+        &-text {
+            max-width: 542px;
+            width: 100%;
+
+            & h3 {
+                color: #000;
+
+                /* Заголовок h3 */
+                font-family: Raleway;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                /* 35px */
+                letter-spacing: 0.5px;
+                margin-bottom: 46px;
+            }
+
+            p {
+                color: #000;
+
+                /* Обычный текст */
+                font-family: Raleway;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                /* 23.8px */
+                letter-spacing: 0.34px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .aboutbrand-item{
+        flex-direction: column;
+        text-align: start;
+        &-text{
+            max-width: none;
+            width: 100%;
+        }
+    }
+    .aboutbrand-bottom{
+        flex-direction: column-reverse;
+    }
+}

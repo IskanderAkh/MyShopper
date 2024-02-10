@@ -1,0 +1,388 @@
+.home {
+    height: 830px;
+}
+
+* {
+    font-family: Raleway;
+}
+
+
+
+.Olive {
+    background: olive;
+}
+.pink {
+    background: #FD9696;
+}
+
+.black {
+    background: #000;
+}
+
+.brown {
+    background: linear-gradient(0deg, #927876 0%, #927876 100%), #927876
+}
+
+.gray {
+    background: #D4D4D4
+}
+
+.blue {
+    background: #282c48;
+}
+
+.yellow {
+    background: #FDC796;
+}
+
+.white {
+    background: #f2f2f2 !important;
+
+}
+
+.green {
+    background: #82da7c;
+}
+
+.red {
+    background: #FD9696;
+}
+
+.wishbone {
+    background: #eeece3;
+}
+
+.cashblue {
+    background: #cbdcf2;
+}
+
+.Lavender {
+    background: #d2c4e4;
+}
+
+.WildCurrant {
+    background: #735767;
+}
+
+.Red\&Hearts {
+    background: black;
+}
+
+.oatmeal {
+    background: #e8ddcb;
+}
+
+.darkgreen {
+    background: #37493f;
+}
+
+.skyblue {
+    background: #9eb3cc;
+}
+
+.orange {
+    background: #f85d3a;
+}
+
+.AuroraRed {
+    background: #e3193d;
+}
+
+.SapphireSky {
+    background: #025bbb;
+}
+
+/////////////////////////////////////////////////
+/// 
+///        CART
+
+
+.cartitems {
+    // margin: 100px 170px;
+}
+
+.cartitems hr {
+    height: 3px;
+    background-color: #e2e2e2;
+    border: 0;
+}
+
+.cartitems-quantity {
+    display: flex;
+    width: 47px;
+    padding: 8px 0px 11px 0px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFAFAF;
+    background: transparent;
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.4px;
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+
+    &-first {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        p {
+            // width: 100%;
+            // display: inline-block;
+        }
+    }
+}
+
+.cartitems-format {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.carticon-product-icon {
+    width: 136px;
+    height: 100%;
+}
+
+.cartitems-remove_icon {
+    width: 64px;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    background: transparent;
+}
+
+.cartitems-down {
+    display: flex;
+    margin: 100px 0;
+}
+
+.cartitems-total {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    gap: 40px;
+
+    &-poditog {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+}
+
+.cartitems-total-item {
+    display: flex;
+    // justify-content: space-between;
+    padding: 15px 0;
+    gap: 20px;
+
+    p {
+        color: #000;
+        font-family: Raleway;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0.34px;
+
+    }
+
+    &-itog {
+        // max-width: 287px;
+        width: 110%;
+        display: flex;
+
+        & div {
+            display: flex;
+            gap: 69px;
+            padding: 0 0 0 31px;
+        }
+        
+        &:nth-last-of-type(1) {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;            
+            background: #F1EADC;
+            color: #000;
+            font-family: Raleway;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.5px;
+        }
+
+        & a {
+            padding: 20px 25px;
+            background: #6E9C9F;
+            color: white;
+            // margin-left: 69px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.cartitems-promocode {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cartitems-promocode p {
+
+    color: #555;
+
+}
+
+.cartitems-promobox {
+
+    max-width: 504px;
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 60px;
+    display: flex;
+    gap: 16px;
+    // background: #eaeaea;
+}
+
+.cartitems-promobox input {
+    border: none;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    color: #868686;
+    font-family: Raleway;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.34px;
+    border-bottom: 1px solid black;
+
+}
+
+.cartitems-promobox button {
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    color: #6E9C9F;
+    display: inline-flex;
+    max-width: 248px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #6e9c9f;
+
+    &:hover {
+        background: #6e9c9f;
+        color: white;
+
+    }
+}
+
+button {
+    transition: 0.5s;
+}
+
+.current-location {
+    margin-top: 130px;
+    // margin-bottom: 102px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    h1 {
+        color: #000;
+
+        /* Заголовок h1 */
+        font-family: Raleway;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        /* 60.5px */
+        letter-spacing: 1.1px;
+    }
+
+    &-link {
+        display: flex;
+
+        & a {
+
+            color: #000;
+            font-family: Raleway;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.34px;
+        }
+
+        p {
+            color: #909090;
+            font-family: Raleway;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.34px;
+        }
+    }
+}
+
+
+// ODER.JSX
+
+.order {
+    width: 100%;
+    display: flex;
+
+    & div {
+        flex: 1;
+    }
+
+    &-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    &-form {
+        max-width: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .current-location {
+        margin-top: 50px;
+    }
+
+    .current-location-link {
+        margin-bottom: 35px;
+    }
+}

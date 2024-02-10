@@ -1,0 +1,118 @@
+.footer {
+    height: 363px;
+    width: 100%;
+    background: #F1EADC;
+    padding: 100px;
+
+    &-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+
+        a {
+            color: black;
+
+        }
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex: 5;
+
+            &-up {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+
+                &-logo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &-down {
+                display: flex;
+                max-width: 460px;
+                width: 100%;
+                justify-content: space-between;
+
+                &-links {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+
+        &-right {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 30px;
+
+            &-contact {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 10px;
+            }
+
+            &-sm {
+                display: flex;
+                gap: 12px;
+            }
+        }
+    }
+}
+
+
+.footer-list-wrapper {
+    display: flex;
+    gap: 45px;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+    .footer-wrapper-left {
+        flex: 2;
+    }
+
+    .footer-wrapper-right {
+        flex: 1;
+    }
+}
+
+@media (max-width:992px) {
+    .footer-list-wrapper {
+        display: flex;
+        gap: 20px;
+        margin: auto;
+    }
+    .footer{
+        padding:100px 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-list-wrapper {
+        display: none;
+        
+    }
+    .footer-wrapper-left-down-links{
+        display: none;
+    }
+    .footer{
+        padding: 50px;
+        height: 100%;
+    }
+}
+@media (max-width:420px) {
+    .footer-wrapper{
+        flex-direction: column;
+        gap: 40px;
+    }
+}

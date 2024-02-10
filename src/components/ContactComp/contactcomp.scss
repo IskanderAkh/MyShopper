@@ -1,0 +1,53 @@
+.contactcomp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+
+    &-map {
+        height: 476px;
+        // height: 100%;
+        width: 100%;
+    }
+
+    margin-bottom: 200px;
+
+    &-info {
+
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+
+        & h4 {
+            /* Обычный текст */
+            color: rgb(0, 0, 0);
+            font-family: Raleway;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 2%;
+            text-align: left;
+        }
+
+        & a, p {
+            transition: 0.5s;
+            /* Заголовок h4 */
+            color: rgb(0, 0, 0);
+            font-family: Raleway;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 2%;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+ .contactcomp-info{
+    flex-direction: column;
+    align-items: flex-start;
+ }   
+}

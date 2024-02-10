@@ -1,0 +1,75 @@
+.newcollection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+        color: #000;
+        /* Заголовок h2 */
+        font-family: Raleway;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        /* 44px */
+        letter-spacing: 0.8px;
+        margin-bottom: 95px;
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+    }
+
+    &-btn {
+        padding: 22px 50px;
+        font-size: 17px;
+        border: 1px solid var(--CTA, #6E9C9F);
+        background: transparent;
+        align-self: center;
+        margin-top: 65px;
+        margin-bottom: 150px;
+        color: #6E9C9F;
+        text-align: center;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.34px;
+        display: flex;
+
+        &:hover {
+            background: #6E9C9F;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+   
+}
+@media (max-width:560px) {
+    .newcollection{
+        margin-top: 150px;
+    }
+    .newcollection-items{
+        padding: 0;
+    }
+}
+@media (max-width:460px) {
+    .newcollection-title{
+        font-size: 25px;
+    }
+    .newcollection-items{
+        padding: 0 !important;
+    }
+}
+@media (max-width: 640px) {
+    .newcollection-items{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+}

@@ -1,0 +1,300 @@
+.product {
+    margin-bottom: 100px;
+
+    &-title {
+        margin-top: 55px;
+        margin-bottom: 102px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        h1 {
+            color: #000;
+
+            /* Заголовок h1 */
+            font-family: Raleway;
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+            /* 60.5px */
+            letter-spacing: 1.1px;
+        }
+
+        div {
+            color: #000;
+            font-family: Raleway;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.34px;
+
+            span {
+                color: #909090;
+                font-family: Raleway;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                letter-spacing: 0.34px;
+            }
+        }
+    }
+
+    &-main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+
+        &-img {
+            max-width: 536px;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            & h2 {
+                color: #998E78;
+
+                /* Заголовок h2 */
+                font-family: Raleway;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%;
+                /* 44px */
+                letter-spacing: 0.8px;
+                margin-bottom: 25px;
+            }
+
+            & h5 {
+                color: #000;
+
+                /* Заголовок h4 */
+                font-family: Raleway;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                /* 28px */
+                letter-spacing: 0.4px;
+            }
+
+            // height: 100%;
+            &-sizes {
+                display: flex;
+                gap: 14px;
+
+                button {
+                    color: #000;
+                    font-family: Raleway;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    letter-spacing: 0.34px;
+                    border: 1px solid #000;
+                    width: 41px;
+                    height: 41px;
+                    background: white;
+                    text-align: center;
+                    cursor: pointer;
+
+                }
+
+                margin-bottom: 25px;
+            }
+
+            &-colors {
+                display: flex;
+                gap: 15px;
+
+                button {
+                    width: 41px;
+                    height: 41px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    border: none;
+
+                    &:hover {
+                        border: 1px solid black;
+                    }
+                }
+
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+.colorsBtn {
+    overflow: hidden;
+    outline: none;
+
+    & img {
+        width: 100%;
+        border-radius: 50%;
+        height: 100%;
+    }
+}
+
+.pink {
+    background: pink;
+}
+
+// .red{
+//     background: url('/red.png');
+// }
+#numberOfItems {
+    color: #000;
+    // text-align: center;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+    letter-spacing: 0.4px;
+    user-select: none;
+
+}
+
+.toCartbtn {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-to-cart {
+    display: flex;
+    width: 268px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background: #6E9C9F;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        padding: 21px 49px;
+        color: #6E9C9F;
+        background: white;
+        border: 1px solid #6E9C9F;
+
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #000;
+    transition: 0.1s;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+.swiper-pagination-bullet{
+    width: 10px !important;
+    height: 10px !important;
+}
+.swiper-pagination-bullet-active{
+    width: 15px !important;
+    height: 15px !important;
+    background: #000 !important;
+}
+
+@media (max-width: 1024px) {
+    .btn-to-cart {
+        width: 170px;
+    }
+}
+
+@media (max-width: 650px) {
+    .product-title {
+        margin-top: 25px;
+        margin-bottom: 70px;
+
+        & h1 {
+            font-size: 30px;
+        }
+
+        & div {
+            font-size: 12px;
+
+            & span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .product-main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 105px;
+    }
+
+    .product-main-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    .product-main-text {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
